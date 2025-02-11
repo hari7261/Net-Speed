@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+.bg-gradient-radial {
+  background-image: radial-gradient(circle at center,
+    theme('colors.purple.500/0.15'),
+    theme('colors.transparent') 70%);
+}
